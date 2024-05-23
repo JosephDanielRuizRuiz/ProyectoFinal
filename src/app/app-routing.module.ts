@@ -1,7 +1,24 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { InicioComponent } from './inicio/inicio.component';
+import { EnvioComponent } from './envio/envio.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/inicio',
+    pathMatch: 'full'
+  },
+  {
+    path: 'inicio',
+    component: InicioComponent
+  },
+  {
+    path: 'enviar/edit/:id',
+    component: EnvioComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

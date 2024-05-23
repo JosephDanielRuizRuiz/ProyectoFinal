@@ -1,0 +1,184 @@
+:root {
+    --violeta: #ec77d5;
+    --borde: #feffdd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#ec77d5;
+    font-family: 'Lobster', cursive;
+}
+
+.encabezado {
+    width: 100%;
+    margin: auto;
+    padding: 10px 30px;
+    background-color:#feffdd
+}
+
+header .encabezado {
+    display: flex;
+    justify-content: space-between; /*poner logotipo izquierda y derecha*/
+    align-items: center; /*alinear elementos en el centro*/
+}
+
+header nav a{
+    font-family: 'Lexend', sans-serif;
+    color: #000;
+    margin: 5px;
+}
+
+header nav a:hover,
+header nav a.active{
+    font-weight: bold;
+    color: var(--violeta);
+}
+
+.seccion-pagina{
+    width: auto;
+    padding: 70px 30px;
+}
+
+
+.seccion-pagina .Subtitulo{
+    font-family: 'Lobster', cursive;
+}
+
+.seccion-pagina{
+    padding: 10px;
+}
+
+.seccion-pagina .descripcion{
+    font-family: 'Lexend', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.seccion-pagina{
+    font-size: 16px;
+    min-height: 28.125em;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+
+.seccion-pagina .contenedor{
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.seccion-pagina .descripcion{
+    max-width: 50%;
+}
+
+/* Servicios */
+
+.Descripcion-servicios{
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between; /*poner logotipo izquierda y derecha*/
+    align-items: center; /*alinear elementos en el centro*/
+}
+
+.Descripcion-servicios *{
+    padding: 10px;
+}
+
+.contenedor-imagenes {
+    font-size: 18px;
+	line-height: 30px;
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	text-align: center;
+}
+
+.contenedor-imagenes p{
+    font-size: 18px;
+	line-height: 30px;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+
+.contenedor-imagenes img{
+    width: 60%;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+    
+
+    opacity: 0;/*me oculta la imagen*/
+    transform: scale(0.9);
+    transition: .7s ease-in-out all;
+}
+
+
+
+.tabla{
+    margin-top: 60px;
+    margin-left: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla table{
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.tabla table thead tr th{
+    background-color: brown;
+    padding: 12px;
+}
+
+.tabla table thead tr td{
+    padding: 12px;    
+    margin: 10px;
+}
+
+tbody tr .campos{
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    height: 70px;
+}
+
+.pie-de-pagina{
+    background-color: #FFF;
+    width: 100%;
+    margin: auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between; /*poner logotipo izquierda y derecha*/
+    align-items: center; /*alinear elementos en el centro*/
+}
+
+.pie-de-pagina h3{
+    padding: 20px;
+}
+
+.pie-de-pagina nav a{
+    font-family: 'Lexend', sans-serif;
+    margin: 20px;
+}
+
+.pie-de-pagina nav a:hover{
+    font-weight: bold;
+    color: #000000;
+}
