@@ -13,10 +13,6 @@ const routes: Routes = [
   {
     path: 'inicio',
     component: InicioComponent
-  },
-  {
-    path: 'enviar/edit/:id',
-    component: EnvioComponent
   }
 ];
 

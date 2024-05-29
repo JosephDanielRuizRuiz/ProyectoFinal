@@ -7,7 +7,7 @@ import { Datos } from '../model/datos';
 })
 export class DatosService {
 
-  API_URI1 ='';
+  API_URI1 ='http://localhost/BACK/recepcion.php';
 
   constructor(private http: HttpClient) { }
 
@@ -15,7 +15,8 @@ export class DatosService {
     return this.http.get(`${this.API_URI1}`);
   }
 
+  /*
   guardar(datos: Datos) {
     return this.http.post(`${this.API_URI1}`, datos);
-  }
+  }*/
 }

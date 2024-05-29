@@ -62,6 +62,7 @@ header nav a.active{
 .seccion-pagina{
     font-size: 16px;
     min-height: 28.125em;
+    background: url('/assets/estetica.jpeg');
     background-position: center center;
     background-size: cover;
     margin-bottom: 3.12em;

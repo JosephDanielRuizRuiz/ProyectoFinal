@@ -10,34 +10,36 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class InicioComponent implements OnInit {
 
-  @HostBinding('class') clases = 'row';
+  //@HostBinding('class') clases = 'row';
 
   datos: Datos = {
-    id: 0,
+    /*id: 0,
     Nombre: "",
     Descripcion: "",
     Tipo: "",
     Precio: "",
-    Imagen: ""
+    Imagen: ""*/
   };
-  listaDatos: any = []
+
+  dato: any = []
   constructor(private datosService: DatosService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getDatos();
 
-    const params = this.activatedRoute.snapshot.params;
+    //const params = this.activatedRoute.snapshot.params;
   }
 
   getDatos(){
     this.datosService.envio().subscribe(
       res => {
-        this.datos = res;
+        this.dato = res;
       },
       err => console.log(err)
     );
   }
 
+  /*
   guardar() {
     delete this.datos.id;
  
@@ -49,6 +51,6 @@ export class InicioComponent implements OnInit {
           },
           err => console.error(err)
         )
-    }
+    }*/
 
 }

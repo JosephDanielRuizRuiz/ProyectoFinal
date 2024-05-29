@@ -26,6 +26,7 @@ export class EnvioComponent implements OnInit {
     const params = this.activatedRoute.snapshot.params;
   }
 
+  /*
   guardar() {
     delete this.datos.id;
  
@@ -37,6 +38,6 @@ export class EnvioComponent implements OnInit {
           },
           err => console.error(err)
         )
-    }
+    }*/
 
 }

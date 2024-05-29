@@ -85,50 +85,18 @@
                     <!--
                     
                     -->
-                    <tr *ngFor="let Datos of listaDatos">
-                        <td>{{listaDatos.Nombre}}</td>
-                        <td>{{listaDatos.Descripcion}}</td>
-                        <td>{{listaDatos.Tipo}}</td>
-                        <td>{{listaDatos.Precio}}</td>
-                        <td><img src="{{listaDatos.Imagen}}" alt=""></td>
+                    <tr *ngFor="let datos of dato">
+                        <td>{{datos.Nombre}}</td>
+                        <td>{{datos.Descripcion}}</td>
+                        <td>{{datos.Tipo}}</td>
+                        <td>{{datos.Precio}}</td>
+                        <td><img src="{{datos.Imagen}}" alt="" width="550" height="350"></td>
                     </tr>                 
                     
                    
                 </tbody>
             </table>
         </div>
-
-        <div class="col-6 col-sm-3">
-       
-            <button type="submit" class="btn btn-success btn-block" (click)="guardar()">EDITAR cambia</button>
-        </div>
-          
-            <form action="">
-                <br>
-              <label>id</label>
-               <input type="text" name=" " [(ngModel)]="datos.id" placeholder="id" class="form-control" autofocus>
-            <br><br>
-               <label>nombre</label>
-               <textarea name="nombre" [(ngModel)]="datos.Nombre" rows="2" placeholder="nombre" class="form-control"></textarea>
-            <br><br>
-               <label>descripcion</label>
-               <input type="dato" name="descripcion" id="tipificacion" [(ngModel)]="datos.Descripcion" class="form-control input-sm">
-            <br><br>
-               <label>imagen</label>
-               <input type="url" name="imagen" [(ngModel)]="datos.Imagen" placeholder="Image" class="form-control">
-            
-            <br><br>
-               <label>tipo</label>
-               <input type="text" name="tipo" id="tipificacion" [(ngModel)]="datos.Tipo" class="form-control input-sm">
-            <br><br>
-               <label>precio</label>
-               <input type="text" name="precio" id="tipificacion" [(ngModel)]="datos.Precio" class="form-control input-sm">
-            </form>
-            <br><br>
-            <a  [routerLink]="['/enviar/edit', datos.id]" class="btn btn-info btn-block">
-                AGREGAR NUEVO
-              </a>
-
 
         <footer>
             <div class="pie-de-pagina">
